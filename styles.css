@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'VCR';
+    src: url('fonts/vcr.ttf') format('truetype'); /* Path to your font file */
+}
+
+/* Reset the default margin and padding */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Hide scrollbars */
+}
+
+/* Style for the background video */
+#background-video {
+    position: fixed; /* Use fixed positioning */
+    top: 0;          /* Align top to the top */
+    left: 0;         /* Align left to the left */
+    width: 100vw;    /* 100% of the viewport width */
+    height: 100vh;   /* 100% of the viewport height */
+    z-index: -1;     /* Ensure it's behind other items */
+    object-fit: contain; /* Ensure the whole video fits in the view */
+    object-position: center; /* Center the video in the view */
+    background-color: black;
+}
+
+
+/* Style for the links container */
+.link-container {
+    position: fixed;    /* Fixed position to stay in view */
+    bottom: 100px;       /* 20px from the bottom of the viewport */
+    width: 100%;        /* Full width to center content */
+    text-align: center; /* Center the links */
+    z-index: 2;         /* Ensure it's on top of the video */
+}
+
+/* Style for the links */
+.link-container a {
+    margin: 0 30px;       /* Spacing between links */
+    color: white;         /* White text color */
+    opacity: 0.8;
+    font-family: 'VCR', sans-serif;
+    font-size: 40px;      /* Size of the text */
+    text-decoration: none; /* No underline */
+    padding: 10px;        /* Padding around the text */
+    border-radius: 5px;   /* Rounded corners */
+}
+
+/* Change color on hover */
+.link-container a:hover {
+    color: #f0f0f0;
+    background: rgba(0, 0, 0, 0.5);
+}
