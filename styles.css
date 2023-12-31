@@ -28,7 +28,7 @@ body, html {
 /* Style for the links container */
 .link-container {
     position: fixed;    /* Fixed position to stay in view */
-    bottom: 100px;       /* 20px from the bottom of the viewport */
+    bottom: 80px;       /* 20px from the bottom of the viewport */
     width: 100%;        /* Full width to center content */
     text-align: center; /* Center the links */
     z-index: 2;         /* Ensure it's on top of the video */
@@ -40,7 +40,7 @@ body, html {
     color: white;         /* White text color */
     opacity: 0.8;
     font-family: 'VCR', sans-serif;
-    font-size: 40px;      /* Size of the text */
+    font-size: 30px;      /* Size of the text */
     text-decoration: none; /* No underline */
     padding: 10px;        /* Padding around the text */
     border-radius: 5px;   /* Rounded corners */
@@ -49,5 +49,20 @@ body, html {
 /* Change color on hover */
 .link-container a:hover {
     color: #f0f0f0;
-    background: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    /* background: rgba(0, 0, 0, 0.5); */
+}
+
+.link-item {
+    display: inline-block; /* Align items horizontally */
+    margin: 0 15px; /* Adjust spacing as needed */
+}
+
+.link-item img {
+    display: block; /* Ensure the logo is on its own line */
+    margin: 0 auto; /* Center the logo */
+    width: 50px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.7;
+    margin-bottom: 10px;
 }
